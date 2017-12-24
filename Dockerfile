@@ -76,7 +76,7 @@ RUN ( id -u $NAGIOS_USER    || useradd --system -d $NAGIOS_HOME -g $NAGIOS_GROUP
 # Install nagios core
 
 RUN cd /tmp                                                                             &&  \
-    git clone https://github.com/NagiosEnterprises/nagioscore.git -b nagios-4.3.1       &&  \
+    git clone https://github.com/NagiosEnterprises/nagioscore.git -b nagios-4.1.0       &&  \
     cd nagioscore                                                                       &&  \
     ./configure                                                                             \
         --prefix=${NAGIOS_HOME}                                                             \
